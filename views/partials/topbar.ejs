@@ -1,0 +1,15 @@
+<div class="topbar">
+  <% if(user) { %>
+  <div class ="userlogout">
+    <form method="post" action="user/logout?_method=DELETE">
+      <input class="logout" type="submit" value="Logout">
+    </form>
+  <% } else { %>
+  <div class="userlogin">
+    <ul>
+      <li><a href="/user/login">login</a></li>
+      <li><a href="/user/new">Create Account</a></li>
+    </ul>
+  <% } %>
+  </div>
+</div>

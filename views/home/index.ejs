@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<% include ../partials/head %>
+<body>
+  <div>
+    <h1>
+      <% if(user) { %>
+      Welcome, <%= user.fname %> <%= user.lname %>
+      <% } else { %>
+      Welcome, Guest
+      <% } %>
+
+    </h1>
+  <div>
+    <form method="post" action="user/logout?_method=DELETE">
+    <input type="submit" value="logout"></form>
+
+
+  <h1>casper tuna</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga illum porro aliquid dicta magni id debitis sequi saepe labore est! Possimus tenetur deserunt maiores doloribus, illum magnam a temporibus accusamus.</p>
+
+  <form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">submit</button>
+  </form>
+    <ul class="quotes">
+      <% for(var i=0; i< quotes.length; i++) {%>
+      <li class="quote">
+        <span><%= quotes[i].name %></span>
+        <span><%= quotes[i].quote %></span>
+      </li>
+      <% } %>
+    </ul>
+  <div>
+    <h2>Replace a quote w/ another quote</h2>
+    <button id="update" >Replace Quote</button>
+  </div>
+  <div>
+    <h3>Delete Darth!</h3>
+    <button id="delete">Delete first Darth Vadar quote</button>
+  </div>
+
+</body>
+</html>
+

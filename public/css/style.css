@@ -1,0 +1,23 @@
+div li {
+  border: 1px solid #ccc;
+  padding:10px;
+  display: inline-block;
+}
+
+.topbar {
+  float:right;
+  position: relative;
+}
+
+.navbar {
+  float:left;
+  position: relative;
+}
+
+.greeting {
+   clear:both;
+}
+
+.login, .new {
+  clear:both;
+}
