@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const dbConnection = 'mongodb://localhost:27017/auth_practice';
+const dbConnection = 'mongodb://localhost:27017/namesake';
 const bcrypt = require('bcrypt');
 const salt = bcrypt.genSalt(10);
 
@@ -44,7 +44,7 @@ function createUser(req, res, next) {
       });
     });
   }
-} 
+}
 
 
 module.exports = { createUser, loginUser }
