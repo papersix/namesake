@@ -17,7 +17,7 @@ A User should be able to query query the popular baby names by gender, ethnicity
 A User should be able to save babynames they like onto a list
 
 
-![Alt text](media/madeinyc_01.png"MadeiNYC 1")
+![Alt text](media/madeinyc_01.png "MadeiNYC 1")
 ![Alt text](media/madeinyc_02.png "MadeiNYC 2")
 ![Alt text](media/madeinyc_03.png "MadeiNYC 3")
 
