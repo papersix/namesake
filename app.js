@@ -7,7 +7,6 @@ const session         = require('express-session');
 const methodOverride  = require('method-override');
 const homeRoute       = require('./routes/home');
 const userRoute       = require('./routes/user');
-
 const nameRoute       = require('./routes/name');
 
 const app             = express();
@@ -25,7 +24,7 @@ app.use(session({
 app.use(methodOverride('_method'));
 
 app.set('view engine', 'ejs');
-
+app.use(bodyParser.json())
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 

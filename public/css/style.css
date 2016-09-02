@@ -1,5 +1,12 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Tamma';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+* {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
 div li {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   padding:10px;
   display: inline-block;
 }
@@ -20,4 +27,54 @@ div li {
 
 .login, .new {
   clear:both;
+}
+
+.blocker {
+  display: inline-block;
+}
+
+.card {
+  padding:10px;
+  margin:5px;
+}
+
+.name {
+  font-family: 'Baloo Tamma', cursive;
+  font-size: 2em;
+  color: #909D55;
+
+}
+
+.rank {
+  position:relative;
+  margin:-15px;
+  float:left;
+  color: #F89321;
+
+
+}
+
+.count {
+  color: #ccc;
+  float:right;
+  clear:both;
+}
+
+.saveme {
+  clear:both;
+  background-color: #F1EFE6;
+  border:none;
+  color:#C4DEDF;
+
+}
+.saveme:hover {
+    color: #0E85D5;
+}
+
+
+
+
+
+.card {
+  border: 1px solid #ccc;
 }
