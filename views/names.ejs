@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<% include ./partials/head %>
+<body>
+<% include ./partials/topbar %>
+<% include ./partials/navbar %>
+<div class="greeting">
+
+</div>
+  Names Here
+
+  <!-- <ul class="names">
+  % for(var i=0; i<names.length; i++) {%
+    <li class="name">
+      <span>%= names[i].name %</span>
+    </li>
+  % } %
+  </ul> -->
+
+  <form action="/names" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

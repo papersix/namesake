@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
   let $searchers = $('#searchers');
 
   $('#yearbtn').click(function () {
@@ -23,10 +25,18 @@ $(document).ready(function() {
             const $name = $('<li>').html(data.nm).addClass('name')
             const $rank = $('<li>').html(data.rnk).addClass('rank')
             const $count = $('<li>').html(data.cnt).addClass('count')
-            const $saveme = $('<button>').html('saveme').addClass('saveme')
+            const $saveme = $('<button>').html('save').addClass('saveme')
             $card.append($name, $rank, $count, $saveme)
             $ul.append($card);
             $searchers.append($ul)
+            $saveme.click(function () {
+            console.log('saved')
+
+
+            })
+
+
+
           })
         }
       })
