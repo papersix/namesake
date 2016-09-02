@@ -3,7 +3,7 @@
 MadeiNYC queries the most popular baby names in New York City from the years 2011-2014 using the NYC Open Data SODA API.  The results provide the name's rank /count and can be queried by year, sex, and ethnicity. 
 
 
-##Technologies: 
+##Technologies
 Node.js, Mongo, Javascript, JQUERY
 
 ##User Stories
