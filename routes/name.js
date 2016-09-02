@@ -10,6 +10,9 @@ router.get('/namesapi', names.getNames, function(req, res) {
    res.json(res.rows);
 });
 
+router.get('/', function(req, res) {
+    res.json({ message: 'hooray! welcome to our api!' });
+});
 
 module.exports = router;
 

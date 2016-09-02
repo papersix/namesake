@@ -8,6 +8,7 @@ const methodOverride  = require('method-override');
 const homeRoute       = require('./routes/home');
 const userRoute       = require('./routes/user');
 const nameRoute       = require('./routes/name');
+const aboutRoute       = require('./routes/about');
 
 const app             = express();
 const port            = process.env.PORT || 3000;
@@ -34,7 +35,7 @@ app.use('/bower_components', express.static(path.join(__dirname,'/bower_componen
 app.use('/', homeRoute);
 app.use('/user', userRoute);
 app.use('/name', nameRoute);
-
+app.use('/about', aboutRoute);
 app.listen(port, function() {
   console.log('Server is listening on ',port);
 })

@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Baloo+Tamma';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
 * {
   font-family: 'Open Sans', sans-serif;
 
@@ -36,6 +36,7 @@ div li {
 .card {
   padding:10px;
   margin:5px;
+  background-color: #F1EFE6;
 }
 
 .name {
@@ -55,16 +56,17 @@ div li {
 }
 
 .count {
-  color: #ccc;
+  color: #FFF;
   float:right;
   clear:both;
+  font-weight: bold;
 }
 
 .saveme {
   clear:both;
   background-color: #F1EFE6;
   border:none;
-  color:#C4DEDF;
+  color:#CCC;
 
 }
 .saveme:hover {
@@ -72,9 +74,20 @@ div li {
 }
 
 
-
-
-
 .card {
   border: 1px solid #ccc;
+}
+
+
+.madeinyc {
+  line-height: 1.5em;
+  font-size:3em;
+  margin: 0 auto;
+  padding:50px;
+}
+h3.welcome {
+  color:#CCC;
+  padding:10px;
+
+  float:right;
 }
