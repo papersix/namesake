@@ -22,10 +22,14 @@ A User should be able to save babynames they like onto a list
 ![Alt text](media/madeinyc_03.png "MadeiNYC 3")
 
 
-next steps
+##next steps
 
 A viewer not be able to search
+
 A user should be able to have a collection names associated to their account
+
 A user should be able to see a randomized collection of names based on their query
+
 A user should be able to see some etymological characteristics of the name before they save 
+
 (consider cross referencing to second api http://www.behindthename.com/api/)
