@@ -1,6 +1,7 @@
 {
   "name": "namesake",
   "version": "1.0.0",
+  "engines": {"node" : "6.2.1"},
   "description": "name api",
   "main": "app.js",
   "scripts": {
@@ -25,8 +26,5 @@
     "path": "^0.12.7",
     "request": "^2.74.0",
     "underscore": "^1.8.3"
-  },
-   "engines": {
-    "node" : "6.2.1"
-  },
+  }
 }
