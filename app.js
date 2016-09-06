@@ -12,6 +12,19 @@ const aboutRoute       = require('./routes/about');
 
 const app             = express();
 const port            = process.env.PORT || 3000;
+//added from caspertuna
+
+
+
+app.post('/quotes', (req,res)=>{
+  db.collection('quotes').save(req.body, (err, result)=>{
+    if (err) throw err;
+    // console.log('i saved an item!')
+    res.redirect('/')
+  })
+  // console.log(req.body);
+})
+
 
 // Adding session as a middleware
 app.use(session({
