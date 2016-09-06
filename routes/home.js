@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const {MongoClient}   = require('mongodb')
 var db
-MongoClient.connect('mongodb://localhost:27017/caspertuna', (err, taco)=>{
+MongoClient.connect( process.env['MONGODB_URI'] || 'mongodb://localhost:27017/caspertuna', (err, taco)=>{
   if(err) throw err;
  db = taco
 })
