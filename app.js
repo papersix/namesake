@@ -16,14 +16,14 @@ const port            = process.env.PORT || 3000;
 
 
 
-app.post('/quotes', (req,res)=>{
-  db.collection('quotes').save(req.body, (err, result)=>{
-    if (err) throw err;
-    // console.log('i saved an item!')
-    res.redirect('/')
-  })
-  // console.log(req.body);
-})
+// app.post('/quotes', (req,res)=>{
+//   db.collection('quotes').save(req.body, (err, result)=>{
+//     if (err) throw err;
+//     // console.log('i saved an item!')
+//     res.redirect('/')
+//   })
+//   // console.log(req.body);
+// })
 
 
 // Adding session as a middleware
